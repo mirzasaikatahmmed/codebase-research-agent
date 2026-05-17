@@ -52,6 +52,12 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f"  {action} superuser: {ADMIN['username']}"))
 
     def _seed_research_data(self):
+        # Clear existing research data to avoid duplicate session conflicts
+        ToolCallLog.objects.all().delete()
+        Finding.objects.all().delete()
+        ResearchSession.objects.all().delete()
+        Repository.objects.all().delete()
+
         # --- FastAPI repo ---
         fastapi_repo, _ = Repository.objects.get_or_create(
             url="https://github.com/tiangolo/fastapi",
