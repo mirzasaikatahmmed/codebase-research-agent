@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-05-18T07:50:00.029Z",
+  "passed": false,
+  "secrets": [
+    {
+      "file": ".env.example",
+      "line": 5,
+      "type": "Connection String Pwd",
+      "severity": "high",
+      "content": "POSTGRES_PASSWORD=change_me_in_production"
+    },
+    {
+      "file": ".env.example",
+      "line": 5,
+      "type": "ENV Secret Variable",
+      "severity": "high",
+      "content": "POSTGRES_PASSWORD=change_me_in_production"
+    }
+  ],
+  "vulnerabilities": {
+    "total": 0,
+    "critical": 0,
+    "high": 0,
+    "moderate": 0,
+    "low": 0,
+    "info": 0,
+    "packages": [],
+    "languages": [
+      {
+        "language": "Python",
+        "icon": "🐍",
+        "detected": true,
+        "toolAvailable": false,
+        "total": 0,
+        "critical": 0,
+        "high": 0,
+        "moderate": 0,
+        "low": 0,
+        "packages": [],
+        "installHint": "pip install pip-audit"
+      }
+    ]
+  }
+}

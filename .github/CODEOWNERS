@@ -1,0 +1,8 @@
+# Every file in this repository is owned by @mirzasaikatahmmed.
+# A review from this owner is required before any PR can be merged.
+* @mirzasaikatahmmed
+
+# CI/CD and infra changes require explicit sign-off
+.github/                    @mirzasaikatahmmed
+Dockerfile                  @mirzasaikatahmmed
+docker-compose.yml          @mirzasaikatahmmed

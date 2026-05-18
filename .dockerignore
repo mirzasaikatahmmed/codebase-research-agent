@@ -1,0 +1,42 @@
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.mypy_cache/
+.pytest_cache/
+.coverage
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment / secrets
+.env
+*.env.local
+
+# Django artefacts
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+
+# Repo clone cache (large; mounted as a volume at runtime)
+.cache/
+
+# Dev tools
+.vscode/
+.idea/
+*.swp
+
+# Test results
+htmlcov/
+coverage.xml
+test-results/
+
+# Docs
+*.md
