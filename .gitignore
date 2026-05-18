@@ -58,7 +58,6 @@ dmypy.json
 .pyre/
 
 # IDEs
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -80,3 +79,8 @@ share/python-wheels/
 *.p12
 secrets.json
 credentials.json
+.security-reports
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
